@@ -2,7 +2,7 @@
 
 This is simply a test for my new app.
 
-Some configuration:dd
+Some configuration
 
 * Ruby version: Latest
 
