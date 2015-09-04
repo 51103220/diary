@@ -5,4 +5,5 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-Entry.create(title: 'dedo',content: 'rewan')
+#User.create(name: 'dedorewan', email: 'rewandedo1009@gmail.com', password: 'violet1009', group: 'admin')
+Micropost.create(content: 'Yeah, first time to fuck another bitch', user_id: 1)
