@@ -1,11 +1,10 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is simply a test for my new app.
 
-Things you may want to cover:
+Some config:
 
-* Ruby version
+* Ruby version: Latest
 
 * System dependencies
 
@@ -13,7 +12,7 @@ Things you may want to cover:
 
 * Database creation
 
-* Database initialization
+* Database initialization: Mysql
 
 * How to run the test suite
 
@@ -21,8 +20,3 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
