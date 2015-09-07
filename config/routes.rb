@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :static_pages
+  root 'static_pages#home'
+  get 'help' => 'static_pages#help'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -15,7 +19,7 @@ Rails.application.routes.draw do
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
     resources :users
-    root 'users#index'
+    #root 'users#index'
     resources :microposts
   # Example resource route with options:
   #   resources :products do
