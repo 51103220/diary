@@ -1,7 +1,9 @@
 <html>
 <head>
-	<title>QNFC <%= yield :title %></title>
+	<title>QN Futsal Club <%= yield :title %></title>
 	<%= stylesheet_link_tag 'application' %>
+	<%= javascript_include_tag 'application' %>
+	<%= csrf_meta_tags %>
 </head>
 <body>
 	<p style="color: green"><%= flash[:notice] %></p>
