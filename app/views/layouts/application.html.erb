@@ -1,12 +1,26 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<title><%= set_title(yield(:title)) %></title>
 	<%= stylesheet_link_tag 'application' %>
-	<%= javascript_include_tag 'application' %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
 	<%= csrf_meta_tags %>
+	<!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
 </head>
 <body>
+	<%= render 'layouts/header' %>
+	<%= render 'micropost/newsfeed' %>
+	<%= render 'layouts/about' %>
+	<%= render 'layouts/statitics' %>
+	<%= render 'users/team' %>
+	<%= render 'layouts/signup' %>
 	<p style="color: green"><%= flash[:notice] %></p>
 	<%= yield %>
+
 </body>
 </html
