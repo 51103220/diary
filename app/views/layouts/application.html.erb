@@ -18,12 +18,9 @@
 	<%= render 'layouts/about' %>
 	<%= render 'layouts/statitics' %>
 	<%= render 'users/team' %>
-    <div class ="container">
-		<p style="color: green"><%= flash[:notice] %></p>
-
-		<%= yield %>
-	</div>
-
+	<%= render 'layouts/signup' %>
+	<p style="color: green"><%= flash[:notice] %></p>
+	<%= yield %>
 
 </body>
 </html
