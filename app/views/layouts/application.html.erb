@@ -15,10 +15,15 @@
 <body>
 	<%= render 'layouts/header' %>
 	<%= render 'micropost/newsfeed' %>
+	<%= render 'layouts/about' %>
+	<%= render 'layouts/statitics' %>
+	<%= render 'users/team' %>
     <div class ="container">
 		<p style="color: green"><%= flash[:notice] %></p>
+
 		<%= yield %>
 	</div>
+
 
 </body>
 </html
